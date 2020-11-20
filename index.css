@@ -1,0 +1,131 @@
+.item1 {
+  grid-area: header;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.item2 {
+  grid-area: menu;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.item3 {
+  grid-area: main;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.item4 {
+  grid-area: right;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.item5 {
+  grid-area: footer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.grid-container-A {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu main main main main main"
+    "footer footer footer footer footer footer";
+  grid-gap: 10px;
+  background-color: #b3b7bb;
+  padding: 10px;
+}
+
+.grid-container-A > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.grid-container-B {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu menu main main right right"
+    "footer footer footer footer footer footer";
+  grid-gap: 10px;
+  background-color: #b3b7bb;
+  padding: 10px;
+}
+
+.grid-container-B > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.grid-container-C {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu menu menu right right right"
+    "footer footer footer footer footer footer";
+  grid-gap: 10px;
+  background-color: #b3b7bb;
+  padding: 10px;
+}
+
+.grid-container-C > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.grid-container-D {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu main main main right right"
+    "footer footer footer footer footer footer";
+  grid-gap: 10px;
+  background-color: #b3b7bb;
+  padding: 10px;
+}
+
+.grid-container-D > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+ul {
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(112, 109, 109);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #29529e;
+}

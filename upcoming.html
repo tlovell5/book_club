@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Upcoming Reads</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+	<nav>
+		<a href="index.html">Home</a>
+		<a href="library.html">Library</a>
+		<a class="active" href="upcoming.html">Upcoming Reads</a>
+		<a href="contact.html">Contact</a>
+	</nav>
+
+	<main id="library-page">
+		<header>Upcoming Reads Page</header>
+		<section>
+
+			<div class="slidebar">
+				<div class ="book"><img src="HaileyPic1.jpg"/><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet illum facilis qui! Odit, ut quas reiciendis non expedita ad officiis quis sed blanditiis inventore voluptate dolorum impedit explicabo atque aperiam.</p></div>
+				<div class ="book"><img src="HaileyPic2.jpg"/><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa veritatis explicabo rerum quia ex ab commodi vel, reiciendis esse sed impedit suscipit soluta pariatur. Eius, id? Sit error voluptate laboriosam.</p></div>
+				<div class ="book"><img src="HaileyPic3.jpg"/><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet ex laborum quidem dolorem quisquam, assumenda vero ab tenetur repellat cum consequuntur eius in, ea error quibusdam! Voluptates mollitia dignissimos architecto.</p></div>
+
+			<button class="left" onclick="plusDivs(-1)">&#10094;</button>
+			<button class="right" onclick="plusDivs(1)">&#10095;</button>
+
+		</div>
+		</section>
+		<footer>Hailey's Book Club</footer>
+	</main>
+
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+		
+		function plusDivs(n) {
+		  showDivs(slideIndex += n);
+		}
+		
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("book");
+		  if (n > x.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = x.length}
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		  }
+		  x[slideIndex-1].style.display = "block";  
+		}
+		</script>
+</body>
+</html>
